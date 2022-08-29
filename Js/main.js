@@ -14,7 +14,7 @@ let timer = document.querySelector(".timer");
 
 //fetch the data from json file
 async function fetchData() {
-    let data = await fetch("/html_questions.json");
+    let data = await fetch("html_questions.json");
     data = await data.json();
     return data;
 };
