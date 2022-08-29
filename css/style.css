@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    background-color: #eee;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+
+.category {
+    font-weight: 600;
+}
+
+.question {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.question .answer {
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+}
+
+.question .answer div {
+    padding: 12px;
+}
+
+.question .answer div:not(:last-child) {
+    border-bottom: 1px solid rgb(0, 0 , 0, 20%);
+}
+
+.question .answer div input {
+    accent-color: rgb(59, 59, 236);
+    position: static;
+}
+
+.question .answer div label {
+    margin-left: 5px;
+    color: rgb(0, 0 , 0, 70%);
+    font-weight: 500;
+}
+
+.question .answer div input:checked + label {
+    color: rgb(59, 59, 236);
+}
+
+.btn {
+    background-color: rgb(59, 59, 236);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+
+.footer .bubble {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+}
+
+.footer .bubble span {
+    background-color: #eee;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.footer .bubble span:first-child {
+    background-color: rgb(59, 59, 236);
+}
